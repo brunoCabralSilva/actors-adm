@@ -48,6 +48,7 @@
 
 <li><h4>DeleteActor</h4></li> 
 <p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
+</ol>
 
 <h2 id="tecnologias-utilizadas">Tecnologias utilizadas</h2>
 
@@ -68,6 +69,3 @@
 <h2 id="conclusão">Conclusão</h2>
 
 <p>Programar é um eterno aprendizado. Quanto mais se pratica, mais se melhora. Praticar conceitos de programação com coisas que se é apaixonado apimenta ainda mais a relação! Muitos aprendizados novos são adicionados a cada dia, fazendo com que este projeto já tenha valido a pena antes mesmo de ser concluído!</p>
-
-
-<p align="center">Aplicação FullStack criada para praticar o relacionamento entre o Front-end com o back-end com o Framework Axios do javascript</strong>!</p>
