@@ -24,23 +24,23 @@
 
 <h2 id="descrição-do-projeto">Descrição do Projeto</h2>
 
-<p>O Actors Adm é uma aplicação Dockerizada que se conecta à tabela actor do banco de dados Sakila disponibilizada pelo Mysql. Por meio do comando "docker-compose up" (necessário possuir o Docker instalado) são carregados três containers:
+<p>O Actors Adm é uma aplicação Dockerizada que se conecta à tabela actor do banco de dados Sakila disponibilizada pelo Mysql. Por meio do comando "docker-compose up" (necessário possuir o Docker instalado) são carregados três containers:</p>
 
 <ol>
 <li><h4>Api-container</h4></li> 
 
 
- Contém o back-end do projeto onde é utilizado o Node.js para criar métodos HTTP de CRUD (criação, leitura, atualização e exclusão) por meio dos verbos GET, POST, PUT e DELETE, pertencentes à rota actors.
+ <p>Contém o back-end do projeto onde é utilizado o Node.js para criar métodos HTTP de CRUD (criação, leitura, atualização e exclusão) por meio dos verbos GET, POST, PUT e DELETE, pertencentes à rota actors.</p>
 
 <li><h4>Mysql-container</h4></li> 
 
 
- Contém o banco de dados e o Mysql, onde é carregado automaticamente o sakila para uso da tabela actor.
+ <p>Contém o banco de dados e o Mysql, onde é carregado automaticamente o sakila para uso da tabela actor.</p>
 
 <li><h4>web-container</h4></li> 
-</ol>
 
- Contém o Front-end do projeto, onde no componente Actors é possível por meio de quatro botões escolher qual a ação a ser executada pelo usuário, seja ela de criação, leitura, atualização ou exclusão. Ao clicar no botão correspondente, o componente relazionado ao método é carregado e é nele que é utilizado o axios para a conexão com o back-end.
+ <p>Contém o Front-end do projeto, onde no componente Actors é possível por meio de quatro botões escolher qual a ação a ser executada pelo usuário, seja ela de criação, leitura, atualização ou exclusão. Ao clicar no botão correspondente, o componente relazionado ao método é carregado e é nele que é utilizado o axios para a conexão com o back-end.</p>
+</ol>
 </p>
 
 <h2 id="tecnologias-utilizadas">Tecnologias utilizadas</h2>
