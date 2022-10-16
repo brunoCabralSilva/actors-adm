@@ -2,14 +2,6 @@
 
 <p align="center">Aplicação FullStack criada para praticar o relacionamento entre o Front-end com o back-end com o Framework Axios do javascript</strong>!</p>
 
-<img width="100%" object-fit="cover" src="front/src/images/GetAllActors.gif" alt="Método GET" />
-
-<img width="100%" object-fit="cover" src="front/src/images/RegisterActor.gif" alt="Método POST" />
-
-<img width="100%" object-fit="cover" src="front/src/images/UpdateActor.gif" alt="Método PUT" />
-
-<img width="100%" object-fit="cover" src="front/src/images/DeleteActor.gif" alt="Método Delete" />
-
 <h2> Índice</h2>
 
 * [Introdução](#intro)
@@ -35,9 +27,9 @@
 <li><h4>Mysql-container</h4></li> 
 
 
- <p>Contém o banco de dados e o Mysql, onde é carregado automaticamente o sakila para uso da tabela actor.</p>
+ <p>Além de possuir o Mysql, carrega automaticamente o banco de dados sakila para uso da tabela actor.</p>
 
-<li><h4>web-container</h4></li> 
+<li><h4>Web-container</h4></li> 
 
  <p>Contém o Front-end do projeto, onde no componente Actors é possível por meio de quatro botões escolher qual a ação a ser executada pelo usuário, seja ela de criação, leitura, atualização ou exclusão. Ao clicar no botão correspondente, o componente relazionado ao método é carregado e é nele que é utilizado o axios para a conexão com o back-end.</p>
 </ol>
@@ -47,17 +39,17 @@
 
 * `HTML5`
 * `CSS3`
-* `Javascript (ECMAScript 2018 no Front e CommonJs no Back)`
-* `React`
-* `Docker e Docker-Compose`
-* `Node.js`
 * `Tailwind CSS`
-* `Mysql`
+* `Javascript (ECMAScript 2018 no Front-end e CommonJs no Back-End)`
+* `Docker e Docker-Compose`
+* `React`
 * `Axios`
+* `Node.js`
+* `Mysql`
 
 <h2 id="pessoas-envolvidas">Desenvolvedores e demais contribuidores</h2>
 
-* <strong>Bruno Gabryell Cabral da Silva</strong> - Desenvolvedor Web;
+* <strong>Bruno Gabryell Cabral da Silva</strong> - Desenvolvedor Web FullStack;
 
 <h2 id="conclusão">Conclusão</h2>
 
