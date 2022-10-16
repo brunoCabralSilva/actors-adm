@@ -8,4 +8,4 @@
 
 <img src="front/src/images/UpdateActor.gif" alt="Método PUT" />
 
-<img src="front/src/images/DeleteActor.gif" alt="Método Delete />
+<img src="front/src/images/DeleteActor.gif" alt="Método Delete" />
