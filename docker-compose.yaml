@@ -1,0 +1,30 @@
+version: '3'
+services:
+  database:
+    container_name: mysql_container
+    image: mysql:8.0.29
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=sakila
+    volumes:
+      - ./misc/:/docker-entrypoint-initdb.d
+  api:
+    container_name: api_container
+    build: ./back
+    ports:
+      - 3301:3301
+    depends_on:
+      - database
+    volumes:
+      - ./back:/app-back
+  web:
+    container_name: web_container
+    build: ./front
+    ports:
+      - 3000:3000
+    depends_on:
+      - api
+    volumes:
+      - ./front:/app-front
