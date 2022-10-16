@@ -14,7 +14,6 @@
 
 * [Introdução](#intro)
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Mapeamento do Site](#mapeamento)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Desenvolvedores e demais contribuidores](#pessoas-envolvidas)
 * [Conclusão](#conclusão)
@@ -25,36 +24,30 @@
 
 <h2 id="descrição-do-projeto">Descrição do Projeto</h2>
 
-<p>O Guia das Matilhas é um projeto onde, por meio de pouquíssimo ou quase nenhum esforço, o usuário poderá encontrar listas de dons, fetiches, rituais, entre outras informações, podendo filtrá-las para visualizar apenas o que busca.
-</p>
-
-<h2 id="mapeamento">Mapeamento do site </h2>
+<p>O Actors Adm é uma aplicação Dockerizada que se conecta à tabela actor do banco de dados Sakila disponibilizada pelo Mysql. Por meio do comando "docker-compose up" (necessário possuir o Docker instalado) são carregados três containers:
 
 <ol>
-<li><h4>Actors</h4></li> 
+<li><h4>Api-container</h4></li> 
 
-<p>Lugar de acesso a diversas das informações do site. Por meio desta página, é possível ser direcionado para as páginas Dons, Rituais, Fetiches, Parceiros, Garou Nordeste e Matilha da Kombi.</p>
 
-<p> </p>
+ Contém o back-end do projeto onde é utilizado o Node.js para criar métodos HTTP de CRUD (criação, leitura, atualização e exclusão) por meio dos verbos GET, POST, PUT e DELETE, pertencentes à rota actors.
 
-<li><h4>GetAllActors</h4></li> 
-<p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
+<li><h4>Mysql-container</h4></li> 
 
-<li><h4>RegisterActor</h4></li> 
-<p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
 
-<li><h4>UpdateActor</h4></li> 
-<p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
+ Contém o banco de dados e o Mysql, onde é carregado automaticamente o sakila para uso da tabela actor.
 
-<li><h4>DeleteActor</h4></li> 
-<p>Na página é possível encontrar uma breve descrição do que são os dons, além de ser possível utilizar os filtros de busca, que podem ser maximixados para que se escolham itens de cada lista. As aludidas listas são cinco:</p>
+<li><h4>web-container</h4></li> 
 </ol>
+
+ Contém o Front-end do projeto, onde no componente Actors é possível por meio de quatro botões escolher qual a ação a ser executada pelo usuário, seja ela de criação, leitura, atualização ou exclusão. Ao clicar no botão correspondente, o componente relazionado ao método é carregado e é nele que é utilizado o axios para a conexão com o back-end.
+</p>
 
 <h2 id="tecnologias-utilizadas">Tecnologias utilizadas</h2>
 
 * `HTML5`
 * `CSS3`
-* `Javascript (ECMAScript 2018)`
+* `Javascript (ECMAScript 2018 no Front e CommonJs no Back)`
 * `React`
 * `Docker e Docker-Compose`
 * `Node.js`
